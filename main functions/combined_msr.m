@@ -30,7 +30,7 @@ for gen=1:3
                     tmpVar = length(1:step_size:n_frames);
                     n_frames_training(temp_count)=n_frames;
                     %**********************************************************
-                    rrain_cov_fullbody(:,:,temp_count)=calc_cov_trainin(B,params_dataset.Window_sizeadjust,params_dataset.step_sizeadjust,nSteps);%covarinces of all windows of each training sample
+                    train_cov_fullbody(:,:,temp_count)=calc_cov_trainin(B,params_dataset.Window_sizeadjust,params_dataset.step_sizeadjust,nSteps);%covarinces of all windows of each training sample
                     Y_tr1(temp_count,1)=count_action;
                     %**********************************************************
                     if n_frames<=params_dataset.fix_frames;
